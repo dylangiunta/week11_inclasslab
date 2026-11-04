@@ -37,6 +37,7 @@ except KeyError as error:
     print("KeyError caught:", error)
 
 # Exercise 4 
+# customer.items() gives you the key and value directly in each loop iteration, while looping through customer gives you only the keys, requiring a separate lookup to get each value.
 
 for key, value in customer.items():
     print(f"{key}: {value}")
